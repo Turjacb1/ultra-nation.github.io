@@ -43,6 +43,10 @@ const CountryDetail = () => {
             <p>{country.capital}</p>
           </div>
           <div className="country-item">
+            <h3>Flag:</h3>
+            <p>{country.flag}</p>
+          </div>
+          <div className="country-item">
             <h3>Coordinates:</h3>
             <p>{country.latlng ? `${country.latlng[0]}, ${country.latlng[1]}` : 'N/A'}</p>
           </div>
@@ -78,6 +82,19 @@ const CountryDetail = () => {
           </div>
 
           <div className="country-item">
+            <h3>Area:</h3>
+            <p>{country.area}</p>
+          </div>
+
+
+          <div className="country-item">
+            <h3>Time-Zone:</h3>
+            <p>{country.timezones}</p>
+          </div>
+
+
+
+          <div className="country-item">
             <h3>Languages:</h3>
             {country.languages ? (
               <ul>
@@ -86,6 +103,11 @@ const CountryDetail = () => {
                 ))}
               </ul>
             ) : <p>N/A</p>}
+          </div>
+
+          <div className="country-item">
+            <h3>Off-Week:</h3>
+            <p>{country.startOfWeek}</p>
           </div>
 
           <div className="country-item">
